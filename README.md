@@ -4,11 +4,11 @@
 
 1. In theory, it should work out-of-box. At the root directory write
 
-> `npm install`
+ `npm install`
 
 2. After successfully, run below Which will install node_modules folder of /client subproject
 
-> `npm run post-install`
+ `npm run post-install`
 
 #### Usage
 
