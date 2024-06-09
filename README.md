@@ -12,7 +12,7 @@
 
 #### Usage
 
-To run the project make `npm` run dev` to init nodemon which allows you to also change manually score.json file that change will automatically reload the node server you can also make `npm run start` which will run a server with /client base API endpoints
+To run the project make `npm run dev` to init nodemon which allows you to also change manually score.json file that change will automatically reload the node server you can also make `npm run start` which will run a server with /client base API endpoints
 
 After run you should see something like this:
 
