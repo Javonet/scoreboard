@@ -1,68 +1,14 @@
 [
   {
-    "id": 1,
-    "name": "qew",
-    "time": "12:02:06",
+    "id": 19,
+    "name": "Andrzej",
+    "time": "00:01:00",
     "tech": "Python"
   },
   {
-    "id": 2,
-    "name": "John Newton",
-    "time": "23:03:40",
-    "tech": ".Net"
-  },
-  {
-    "id": 3,
-    "name": "Andrzej Kowalski",
-    "time": "11:04:06",
-    "tech": "Python"
-  },
-  {
-    "id": 4,
-    "name": "Jan Hus",
-    "time": "12:04:11",
-    "tech": "Python"
-  },
-  {
-    "id": 10,
-    "name": "Test Piąty",
-    "time": "23:04:53",
-    "tech": "Ruby"
-  },
-  {
-    "id": 11,
-    "name": "1",
-    "time": "23:04:59",
-    "tech": "Python"
-  },
-  {
-    "id": 14,
-    "name": "4",
-    "time": "23:05:04",
+    "id": 20,
+    "name": "Stefan",
+    "time": "00:00:40",
     "tech": "NodeJs"
-  },
-  {
-    "id": 15,
-    "name": "Testowy",
-    "time": "23:05:04",
-    "tech": "NodeJs"
-  },
-  {
-    "id": 16,
-    "name": "Tes",
-    "time": "09:05:04",
-    "tech": "NodeJs"
-  },
-  {
-    "id": 17,
-    "name": "Arrerer",
-    "time": "23:59:00",
-    "tech": "Python"
-  },
-  {
-    "id": 18,
-    "name": "123",
-    "time": "23:59:03",
-    "tech": "Ruby"
   }
 ]

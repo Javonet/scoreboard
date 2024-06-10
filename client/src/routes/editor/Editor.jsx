@@ -6,6 +6,7 @@ export const Editor = () => {
   const [scores, setScores] = useState([]);
   const [name, setName] = useState("");
   const [tech, setTech] = useState("");
+  const [time, setTime] = useState("");
 
   const fetchScores = async () => {
     const response = await fetch(apiUrl);
@@ -25,7 +26,7 @@ export const Editor = () => {
     const newScore = {
       id: scores?.length + 1,
       name,
-      time: new Date().toLocaleTimeString("en-US", { hour12: false }),
+      time,
       tech,
     };
 
@@ -41,6 +42,7 @@ export const Editor = () => {
       await fetchScores();
       setName("");
       setTech("");
+      setTime("");
     };
     void postScores();
   };
@@ -72,6 +74,12 @@ export const Editor = () => {
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Time"
+          value={time}
+          onChange={(e) => setTime(e.target.value)}
         />
         <select
           placeholder="Score"
