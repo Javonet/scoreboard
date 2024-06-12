@@ -75,12 +75,12 @@ export const Editor = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <input
+        {/* <input
           type="text"
           placeholder="Time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
-        />
+        /> */}
         <select
           placeholder="Score"
           value={tech}
@@ -89,20 +89,29 @@ export const Editor = () => {
           <option key="default" value="">
             -
           </option>
-          <option key="python" value="Python">
-            Python
+          <option key="cplusplus" value="C++">
+            C++
           </option>
-          <option key="nodejs" value="NodeJs">
-            NodeJS
+          <option key="Dotnet" value="Dotnet">
+            Dotnet
           </option>
-          <option key="netcore" value=".Net">
-            .NET
-          </option>
-          <option key="ruby" value="Ruby">
-            Ruby
+          <option key="go" value="Go">
+            Go
           </option>
           <option key="java" value="Java">
             Java
+          </option>
+          <option key="javascript" value="JavaScript">
+            JavaScript
+          </option>
+          <option key="perl" value="Perl">
+            Perl
+          </option>
+          <option key="python" value="Python">
+            Python
+          </option>
+          <option key="ruby" value="Ruby">
+            Ruby
           </option>
         </select>
         <button
@@ -117,7 +126,7 @@ export const Editor = () => {
         {scores.map((s, index) => (
           <li key={s.id}>
             <span>
-              [{index}] {s.name} {">"} {s.time} {">"} {s.tech}{" "}
+              [{index}] {s.name} {">"} {s.tech}{" "}
             </span>
             <button onClick={() => handleDeleteScore(s.id)}>Delete</button>
           </li>

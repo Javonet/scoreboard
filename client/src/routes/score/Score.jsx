@@ -4,20 +4,28 @@ import { Logo } from "../../components/Logo/Logo";
 import { useSearchParams } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 
-function parseTimeString(timeString) {
-  // Split the input string by colon
-  let [hours, minutes, seconds] = timeString.split(":").map(Number);
+// function parseTimeString(timeString) {
+//   // Split the input string by colon
+//   let [hours, minutes, seconds] = timeString.split(":").map(Number);
 
-  // Create a new Date object for the current date
-  let date = new Date();
+//   // Create a new Date object for the current date
+//   let date = new Date();
 
-  // Set the time parts of the date object
-  date.setHours(hours);
-  date.setMinutes(minutes);
-  date.setSeconds(seconds);
-  date.setMilliseconds(0); // Optionally set milliseconds to zero
+//   // Set the time parts of the date object
+//   date.setHours(hours);
+//   date.setMinutes(minutes);
+//   date.setSeconds(seconds);
+//   date.setMilliseconds(0); // Optionally set milliseconds to zero
 
-  return date;
+//   return date;
+// }
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
 }
 
 export default function Score() {
@@ -43,21 +51,21 @@ export default function Score() {
         const data = await response.json();
 
         if (Array.isArray(data)) {
-          const sortedAllScores = data.sort((a, b) => {
-            const bt = parseTimeString(b.time);
-            const at = parseTimeString(a.time);
+          // const sortedAllScores = data.sort((a, b) => {
+          //   const bt = parseTimeString(b.time);
+          //   const at = parseTimeString(a.time);
 
-            return at - bt;
-          });
+          //   return at - bt;
+          // });
 
-          setScores(sortedAllScores);
+          setScores(shuffleArray(data));
         }
       }
     };
 
     void apiCall();
 
-    const intervalId = setInterval(apiCall, 1500);
+    const intervalId = setInterval(apiCall, 2500);
     return () => clearInterval(intervalId);
   }, []);
 

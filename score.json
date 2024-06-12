@@ -10,5 +10,29 @@
     "name": "Stefan",
     "time": "00:00:40",
     "tech": "NodeJs"
+  },
+  {
+    "id": 21,
+    "name": "Marek",
+    "time": "",
+    "tech": "Go"
+  },
+  {
+    "id": 22,
+    "name": "Jan",
+    "time": "",
+    "tech": "C++"
+  },
+  {
+    "id": 23,
+    "name": "Mateusz",
+    "time": "",
+    "tech": "Dotnet"
+  },
+  {
+    "id": 24,
+    "name": "Dawid",
+    "time": "",
+    "tech": "Go"
   }
 ]
