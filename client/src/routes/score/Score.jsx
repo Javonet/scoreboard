@@ -73,7 +73,7 @@ export default function Score() {
         <div className="row heading">
           <span className="place heading">Place</span>
           <span className="name heading">Name</span>
-          <span className="time heading">Time</span>
+          {/* <span className="time heading">Time</span> */}
           <span className="tech heading">Technology</span>
         </div>
 
@@ -86,7 +86,7 @@ export default function Score() {
                 >
                   <span className="place">{index + 1}</span>
                   <span className="name">{score.name}</span>
-                  <span className="time">{score.time}</span>
+                  {/* <span className="time">{score.time}</span> */}
                   <span className="tech">{score.tech}</span>
                 </div>
               );
