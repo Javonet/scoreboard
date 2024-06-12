@@ -65,8 +65,8 @@ export default function Score() {
 
     void apiCall();
 
-    const intervalId = setInterval(apiCall, 2500);
-    return () => clearInterval(intervalId);
+    // const intervalId = setInterval(apiCall, 2500);
+    // return () => clearInterval(intervalId);
   }, []);
 
   return (
@@ -79,7 +79,7 @@ export default function Score() {
       </header>
       <div className="table">
         <div className="row heading">
-          <span className="place heading">Place</span>
+          <span className="place heading">No</span>
           <span className="name heading">Name</span>
           {/* <span className="time heading">Time</span> */}
           <span className="tech heading">Technology</span>
